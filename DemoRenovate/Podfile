@@ -1,0 +1,62 @@
+platform :ios, '12.0'
+inhibit_all_warnings!
+use_frameworks!
+
+target 'DemoRenovate' do
+  pod 'Cartography', '~> 4.0'
+#  pod 'Moya/RxSwift', '~> 14.0'
+  pod 'Moya/RxSwift'
+  pod 'PhoneNumberKit', '~> 3.2'
+  pod 'KeychainAccess', '~> 4.1'
+#  pod 'Stripe', '~> 22.3.0', :modular_headers => true
+  pod 'Stripe'
+  pod 'UberSignature', :git => 'https://github.com/sjrmanning/UberSignature.git'
+  pod 'SwiftGen', '~> 6.5.1'
+
+  pod 'InputBarAccessoryView', :git => 'https://github.com/sjrmanning/InputBarAccessoryView.git'
+
+  # Global utility
+  pod 'PKHUD', '~> 5.0'
+  pod 'IQKeyboardManager', '~> 6.0', :modular_headers => true
+
+  # Text parsing
+  pod 'Down', '~> 0.9'
+
+  # Images and caching
+#  pod 'Nuke', '~> 8.0'
+  pod 'Nuke'
+  pod 'CropViewController', '~> 2.5'
+
+  # Animation
+  pod 'lottie-ios', '~> 3.1'
+
+  # RxSwift and related
+  pod 'RxSwift', '6.5.0'
+  pod 'RxCocoa', '6.5.0'
+  pod 'RxDataSources'
+  pod 'RxGesture'
+#  pod 'RxMKMapView', :git => 'https://github.com/RxSwiftCommunity/RxMKMapView.git', :tag => '5.1.0'
+  pod 'RxMKMapView'
+  pod 'RxOptional'
+  pod 'RxNuke'
+  pod 'RxKeyboard'
+  pod 'RxReachability'
+
+  # Analytics and attribution
+  pod 'Appboy-iOS-SDK/Core', '~> 4.3.2', :modular_headers => true
+  pod 'Mixpanel-swift', '~> 2.7'
+  pod 'Adjust', '~> 4.26', :modular_headers => true
+  pod 'Split', '~> 2.14.0'
+
+  # Logging
+  pod 'Willow', '~> 5.0'
+
+  # Utility
+  pod 'SwiftFormat/CLI', '~> 0.47'
+
+  # Firebase
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Crashlytics'
+
+end
+
